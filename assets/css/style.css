@@ -9,7 +9,7 @@
   .section {
     display: flex;
     align-items: center;
-    min-height: 100vh
+    min-height: 100vh;
   }
   
   .container {
@@ -100,7 +100,58 @@
     color: white;
 }
 
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff;
+  margin-left: 300px;
+}
 
+.title {
+  /* z-index: 1; */
+  width: 835px;
+  height: 172px;
+  font-family: "Normalidad";
+  font-size: 96px;
+  line-height: 90%;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-family: "normalidad";
+  margin-right: 300px;
+}
+
+.cta {
+  margin-left: -10%;
+  margin-top: 20px;
+  padding: 16px 24px;
+  font-size: 16px;
+  background: #d4ff27;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+}
+.cta:hover {
+  background-color: #D4FF27;
+}
+
+.game-card{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+
+/* nav-bar responsive */
 
 @media (max-width: 768px) {
     .nav-links {
@@ -130,5 +181,18 @@
       background: #1F272E;
       padding: 100px;
       border-radius: 50px;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .cta {
+    font-size: 1em;
+    padding: 10px 20px;
   }
 }
