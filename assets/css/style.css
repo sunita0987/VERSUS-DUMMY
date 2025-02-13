@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    /* width:1400px; */
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bg-image {
+    background-image: url(/assets/images/HEROSECTION.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  .navbar {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222;
+}
+
+/* .logo {
+  
+} */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding:5px;
+    margin-left: -60%;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color: #ffffff;
+    font-weight: 700;
+}
+.nav-links a:hover{
+  background-color: #D4FF27;
+}
+
+.nav-links .coming-soon {
+    color: gray;
+    background-color: #000000;
+    padding: 2px 8px;
+}
+
+.auth-buttons .login, .auth-buttons .signup {
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    gap:4px;
+}
+
+.login{
+  padding: 12px 16px;
+  background-color: #1F272E;
+  color:#ffffff;
+}
+.login:hover{
+  background-color:gray;
+}
+
+.signup {
+    background-color:#D4FF27;
+    color:#000000;
+    width:94px;
+    border-radius: 5px;
+}
+.signup:hover{
+  background-color:yellowgreen;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #222;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    .auth-buttons .login, .auth-buttons .signup {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top:100px;
+      right:20px;
+      background: #1F272E;
+      padding: 100px;
+      border-radius: 50px;
+  }
+}
